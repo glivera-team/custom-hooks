@@ -17,7 +17,7 @@ export function Input({
 	placeholder = 'Type something...',
 	required,
 }: InputProps) {
-	const inputRef = useRef<HTMLInputElement | null>(null);
+	const inputRef = useRef<HTMLInputElement>(null);
 	const { ref, ...rest } = register(name, {
 		required: required ? `${name} field is required` : false,
 	});
